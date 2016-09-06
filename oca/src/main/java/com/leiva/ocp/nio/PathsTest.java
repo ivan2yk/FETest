@@ -12,6 +12,9 @@ import java.util.logging.Logger;
 
 public class PathsTest {
 
+    private PathsTest() {
+    }
+
     /**
      * be careful when creating paths. The examples are absolute paths since
      * they begin with the root (/ on unix or c: on windows), when you don't
@@ -53,15 +56,48 @@ public class PathsTest {
         }
     }
 
-    private static void testNIOFilesAndDir() {        
+    private static void testNIOFilesAndDir() {
         try {
             Path p = Paths.get("D:\\TXT-TEST\\a\\b\\c");
             Path file = Paths.get("D:\\TXT-TEST\\a\\b\\c\\nio.txt");
-            
+
             Files.createDirectories(p);
             Files.createFile(file);
         } catch (IOException ex) {
             Logger.getLogger(PathsTest.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final PathsTest other = (PathsTest) obj;
+        return true;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
