@@ -7,5 +7,4 @@ public class TestMyAutoCloseableClass {
             macc.doStuff();
         }
     }
-
 }
