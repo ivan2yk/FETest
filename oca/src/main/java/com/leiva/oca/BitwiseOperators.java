@@ -5,6 +5,9 @@
  */
 package com.leiva.oca;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Usuario
@@ -42,5 +45,11 @@ public class BitwiseOperators {
         System.out.println("Bitwise AND:" + (12 & 12));
         System.out.println("Bitwise inclusive OR:" + (12 | 12));
         System.out.println("Bitwise exclusive OR:" + (12 ^ 12));
+
+        List<String> myList = null;
+
+        if (false && !myList.isEmpty()) {
+            System.out.println("=)");
+        }
     }
 }

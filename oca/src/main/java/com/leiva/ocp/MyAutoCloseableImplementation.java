@@ -3,15 +3,15 @@ package com.leiva.ocp;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MyAutoCloseableClass implements AutoCloseable {
+public class MyAutoCloseableImplementation implements AutoCloseable {
 
     private InputStream is;
 
-    public MyAutoCloseableClass() {
+    public MyAutoCloseableImplementation() {
         this(null);
     }
 
-    public MyAutoCloseableClass(InputStream is) {
+    public MyAutoCloseableImplementation(InputStream is) {
         this.is = is;
     }
 
